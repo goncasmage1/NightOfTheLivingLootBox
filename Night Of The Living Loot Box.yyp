@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "21abc89e-d6e1-4c5f-bab6-22a67fc53ca9",
+            "Value": {
+                "id": "98b0fec4-1839-485c-98ca-c701ee2a5711",
+                "resourcePath": "sprites\\spr_lootbox\\spr_lootbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31046b4b-bdd0-4fdf-9df9-7cf2d7aae317",
             "Value": {
                 "id": "56a4621f-c3a1-4d88-9ac5-934961c93f30",
