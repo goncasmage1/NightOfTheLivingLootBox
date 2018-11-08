@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "1f1ca95c-a72a-4868-a07e-61a02023f2de",
+            "Value": {
+                "id": "17b2f394-035b-4b63-834e-bd31f7a9e3ed",
+                "resourcePath": "scripts\\TileMeeting\\TileMeeting.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "31046b4b-bdd0-4fdf-9df9-7cf2d7aae317",
             "Value": {
                 "id": "56a4621f-c3a1-4d88-9ac5-934961c93f30",
@@ -351,6 +359,14 @@
             }
         },
         {
+            "Key": "d5ecf18e-0353-4c45-a4ad-58c8d77c8f05",
+            "Value": {
+                "id": "1f74c8f5-3189-49d7-bd75-12666d3acdfa",
+                "resourcePath": "tilesets\\collision\\collision.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "e0b093d1-9c66-48c1-b175-9a04bff71657",
             "Value": {
                 "id": "bb6afe63-f0e0-48b4-8a02-69a6b285d5c6",
@@ -389,10 +405,18 @@
                 "resourcePath": "views\\f0ddc2ce-ae0c-4996-a3ad-f45c130a5f61.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "f0fece3f-bb76-4725-9f95-d94ec6922691",
+            "Value": {
+                "id": "717a407a-77bf-48b3-b1a2-800e8e16d867",
+                "resourcePath": "sprites\\spr_mask\\spr_mask.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
-        
+        "1f1ca95c-a72a-4868-a07e-61a02023f2de"
     ],
     "tutorial": ""
 }

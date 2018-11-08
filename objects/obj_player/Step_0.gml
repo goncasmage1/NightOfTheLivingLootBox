@@ -39,15 +39,27 @@ else
 	spd = basespd; 
 }
 
-
+var collision_offset = 10;
 //tick down cooldown every frame
 if (cooldown > 0) cooldown--; 
 
 //Move in four directions when pressing arrow keys.
-if (keyboard_check(ord("A")))	x-= spd;
-if (keyboard_check(ord("D")))	x+= spd;
-if (keyboard_check(ord("W")))	y-= spd;
-if (keyboard_check(ord("S")))	y+= spd;
+if (keyboard_check(ord("A"))) 
+{	
+	if (!TileMeeting(x - spd, y, "Collision", collision_offset)) x-= spd;
+}
+if (keyboard_check(ord("D")))
+{
+	if (!TileMeeting(x + spd, y, "Collision", collision_offset)) x+= spd;
+}
+if (keyboard_check(ord("W")))
+{
+	if (!TileMeeting(x, y - spd, "Collision", collision_offset)) y-= spd;
+}
+if (keyboard_check(ord("S")))
+{
+	if (!TileMeeting(x, y + spd, "Collision", collision_offset)) y+= spd;
+}
 
 //angle sprite towards mouse cursor
 image_angle = point_direction(x,y,mouse_x,mouse_y);
