@@ -1,7 +1,7 @@
-//Create 8 new enemies
+ //Create 8 new enemies
 repeat(8)
 {
-	instance_create_layer(random(room_width),random(room_height),"lay_enemy",obj_enemy);
+	instance_create_layer(choose(room_width-180, 180),choose(room_height-200, 200),"lay_enemy",obj_enemy);
 }
 
 //Decrease time between spawns
