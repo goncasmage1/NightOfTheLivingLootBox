@@ -1,8 +1,6 @@
 //Fire when pressing the left mouse button
 if (mouse_check_button(mb_left)) 
 {
-	//reduce speed to account for recoil
-	//spd = 2;
 	if (cooldown == 0)
 	{
 		//reduce ammo of special weapon if necessary
@@ -12,7 +10,11 @@ if (mouse_check_button(mb_left))
 		//fire normal weapon (1 bullet)
 		if (weapon == 0)
 		{
+			aimOffset = aiming ? aimingAccuracy : hipFireAccuracy;
+			newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
+			bullet.direction = newDir;
+			bullet.image_angle = bullet.direction;
 		}
 		else
 		{
@@ -33,10 +35,19 @@ if (mouse_check_button(mb_left))
 		cooldown = weaponspd;
 	}
 }
-else 
-{
-	//restore speed to default
-	//spd = basespd; 
+
+//aim when pressing the right mouse button (slow movement)
+if (mouse_check_button(mb_right)) {
+	if (!aiming) {
+		aiming = true;
+		spd = 2;
+	}
+}
+else {
+	if (aiming) {
+		aiming = false;
+		spd = basespd;
+	}
 }
 
 var collision_offset = 10;
