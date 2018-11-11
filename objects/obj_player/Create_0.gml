@@ -11,4 +11,5 @@ enemyDamage = 20;
 aiming = false;
 hipFireAccuracy = 20;
 aimingAccuracy = 4;
+aimingZoom = 1.5;
 rounds = 1;
