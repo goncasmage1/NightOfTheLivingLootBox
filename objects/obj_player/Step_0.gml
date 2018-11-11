@@ -2,7 +2,7 @@
 if (mouse_check_button(mb_left)) 
 {
 	//reduce speed to account for recoil
-	spd = 2;
+	//spd = 2;
 	if (cooldown == 0)
 	{
 		//reduce ammo of special weapon if necessary
@@ -36,7 +36,7 @@ if (mouse_check_button(mb_left))
 else 
 {
 	//restore speed to default
-	spd = basespd; 
+	//spd = basespd; 
 }
 
 var collision_offset = 10;
