@@ -41,14 +41,14 @@ if (mouse_check_button(mb_right)) {
 	if (!aiming) {
 		aiming = true;
 		spd = 2;
-		camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
+		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
 	}
 }
 else {
 	if (aiming) {
 		aiming = false;
 		spd = basespd;
-		camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
+		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
 	}
 }
 
