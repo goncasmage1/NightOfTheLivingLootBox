@@ -1,5 +1,3 @@
-///Initialize variables
-
 basespd = 5;			//default movement speed
 spd = 5;				//current movement speed 
 weapon = 0;				//current weapon
@@ -14,4 +12,4 @@ hipFireAccuracy = 20;
 aimingAccuracy = 4;
 aimingZoom = 1.5;
 rounds = 1;
-hp = 10;
+collision_offset = 10;

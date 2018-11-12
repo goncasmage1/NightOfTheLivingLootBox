@@ -4,7 +4,7 @@ var dir_y = lengthdir_y(1, direction);
 var xMove = dir_x * spd;
 var yMove = dir_y * spd;
 	
-if (TileMeeting(x + xMove, y + yMove, "Collision", 0)) instance_destroy();
+if (place_meeting(x + xMove, y + yMove, obj_wall)) instance_destroy();
 
 x += xMove;
 y += yMove;

@@ -52,26 +52,25 @@ else {
 	}
 }
 
-var collision_offset = 10;
 //tick down cooldown every frame
 if (cooldown > 0) cooldown--; 
 
 //Move in four directions when pressing arrow keys.
 if (keyboard_check(ord("A"))) 
 {	
-	if (!TileMeeting(x - spd, y, "Collision", collision_offset)) x-= spd;
+	if (!place_meeting(x - spd - collision_offset, y, obj_wall)) x-= spd;
 }
 if (keyboard_check(ord("D")))
 {
-	if (!TileMeeting(x + spd, y, "Collision", collision_offset)) x+= spd;
+	if (!place_meeting(x + spd + collision_offset, y, obj_wall)) x+= spd;
 }
 if (keyboard_check(ord("W")))
 {
-	if (!TileMeeting(x, y - spd, "Collision", collision_offset)) y-= spd;
+	if (!place_meeting(x, y - spd - collision_offset, obj_wall)) y-= spd;
 }
 if (keyboard_check(ord("S")))
 {
-	if (!TileMeeting(x, y + spd, "Collision", collision_offset)) y+= spd;
+	if (!place_meeting(x, y + spd + collision_offset, obj_wall)) y+= spd;
 }
 
 //angle sprite towards mouse cursor
