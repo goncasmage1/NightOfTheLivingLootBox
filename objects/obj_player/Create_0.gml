@@ -13,3 +13,4 @@ hipFireAccuracy = 20;
 aimingAccuracy = 4;
 aimingZoom = 1.5;
 rounds = 1;
+hp = 10;
