@@ -12,22 +12,10 @@ var yMove = dir_y * finalSpd;
 //if (!place_meeting(x + xMove + (collisionOffset * sign(dir_x)), y + yMove + (collisionOffset * sign(dir_y)), obj_wall))
 //flag will be put in place if collision imminent
 x_flag = (!place_meeting(x + xMove + (collisionOffset * sign(dir_x)), y, obj_wall)) ? false : true;
-y_flag = (!place_meeting(x - xMove, y + yMove + (collisionOffset * sign(dir_y)), obj_wall)) ? false : true;
+y_flag = (!place_meeting(x, y + yMove + (collisionOffset * sign(dir_y)), obj_wall)) ? false : true;
 //won't move toward collision
-if (!x_flag and !x_lock) x += xMove;
-if (!y_flag and !x_lock) y += yMove; 
-//if both flags are active, lock will be placed on x-angle
-if (x_flag and y_flag)
-	{
-		x_lock = true;
-	}
-//lock on x-angle will force it to look for another path in the opposite direction of y
-if (x_lock)
-{
-	y -= yMove; 
-}
-//if no collision is found on x-movement, lock will drop
-x_lock = (!place_meeting(x + xMove + (collisionOffset * sign(dir_x)), y, obj_wall)) ? false : true;
+if (!x_flag) x += xMove;
+if (!y_flag) y += yMove; 
 
 //Angle sprite based on direction
 image_angle = direction;
