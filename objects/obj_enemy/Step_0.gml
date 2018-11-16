@@ -13,9 +13,11 @@ var yMove = dir_y * finalSpd;
 //flag will be put in place if collision imminent
 x_flag = (!place_meeting(x + xMove + (collisionOffset * sign(dir_x)), y, obj_wall)) ? false : true;
 y_flag = (!place_meeting(x, y + yMove + (collisionOffset * sign(dir_y)), obj_wall)) ? false : true;
+x_flag2 = (!place_meeting(x + xMove + (collisionOffset * sign(dir_x)), y, obj_enemy)) ? false : true;
+y_flag2 = (!place_meeting(x, y + yMove + (collisionOffset * sign(dir_y)), obj_enemy)) ? false : true;
 //won't move toward collision
-if (!x_flag) x += xMove;
-if (!y_flag) y += yMove; 
+if (!x_flag && !x_flag2) x += xMove;
+if (!y_flag && !y_flag2) y += yMove; 
 
 //Angle sprite based on direction
 image_angle = direction;
