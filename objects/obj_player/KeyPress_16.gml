@@ -5,4 +5,5 @@ if (money>0)
 	distraction.direction = newDir;
 	distraction.image_angle = distraction.direction;
 	money=money-1;
+	if (money <= 0) game_restart();
 	}
