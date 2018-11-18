@@ -13,3 +13,4 @@ aimingAccuracy = 4;
 aimingZoom = 1.5;
 rounds = 1;
 collision_offset = 10;
+there_was_collision = 0;

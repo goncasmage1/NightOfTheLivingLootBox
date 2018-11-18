@@ -1,3 +1,19 @@
+direction = point_direction(x,y,mouse_x,mouse_y);
+
+if (weapon == 0)
+{
+	sprite_index = spr_player_default_weapon;
+}
+if (weapon == 1 && there_was_collision == 1)
+{
+	sprite_index = spr_player_fireStaff;
+}
+if (weapon > 1)
+{
+	weapon = 0;
+}
+
+
 //Fire when pressing the left mouse button
 if (mouse_check_button(mb_left)) 
 {
@@ -5,31 +21,23 @@ if (mouse_check_button(mb_left))
 	{
 		//reduce ammo of special weapon if necessary
 		ammo--;
-		if (ammo < 1) weapon = 0;
+		
 		
 		//fire normal weapon (1 bullet)
 		if (weapon == 0)
 		{
-			aimOffset = aiming ? aimingAccuracy : hipFireAccuracy;
-			newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
-			bullet.direction = newDir;
+			//bullet = instance_create_layer(x + lengthdir_x(57, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet);
+			bullet.direction = direction;
 			bullet.image_angle = bullet.direction;
 		}
-		else
-		{
-			//fire special weapon (3 bullets split)
-			instance_create_layer(x,y,"lay_bullets",obj_bullet2);
+		else if (weapon == 1 && ammo > 1)
+		{	
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction-=15;
-			}
-			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
-			with (bullet)
-			{
-				direction+=15;
-			}
+			//bullet = instance_create_layer(x + lengthdir_x(59, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet2);
+			bullet.direction = direction;
+			bullet.image_angle = bullet.direction;
+			
 		}
 		//set cooldown to current weaponspeed
 		cooldown = weaponspd;
@@ -37,20 +45,20 @@ if (mouse_check_button(mb_left))
 }
 
 //aim when pressing the right mouse button (slow movement)
-if (mouse_check_button(mb_right)) {
-	if (!aiming) {
-		aiming = true;
-		spd = 2;
-		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
-	}
-}
-else {
-	if (aiming) {
-		aiming = false;
-		spd = basespd;
-		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
-	}
-}
+//if (mouse_check_button(mb_right)) {
+//	if (!aiming) {
+//		aiming = true;
+//		spd = 2;
+//		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
+//	}
+//}
+//else {
+//	if (aiming) {
+//		aiming = false;
+//		spd = basespd;
+//		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
+//	}
+//}
 
 //tick down cooldown every frame
 if (cooldown > 0) cooldown--; 
