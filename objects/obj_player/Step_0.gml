@@ -27,15 +27,17 @@ if (mouse_check_button(mb_left))
 		if (weapon == 0)
 		{
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
+			newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
 			//bullet = instance_create_layer(x + lengthdir_x(57, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet);
-			bullet.direction = direction;
+			bullet.direction = newDir;
 			bullet.image_angle = bullet.direction;
 		}
 		else if (weapon == 1 && ammo > 1)
 		{	
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
+			newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
 			//bullet = instance_create_layer(x + lengthdir_x(59, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet2);
-			bullet.direction = direction;
+			bullet.direction = newDir;
 			bullet.image_angle = bullet.direction;
 			
 		}
@@ -45,20 +47,22 @@ if (mouse_check_button(mb_left))
 }
 
 //aim when pressing the right mouse button (slow movement)
-//if (mouse_check_button(mb_right)) {
-//	if (!aiming) {
-//		aiming = true;
-//		spd = 2;
-//		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
-//	}
-//}
-//else {
-//	if (aiming) {
-//		aiming = false;
-//		spd = basespd;
-//		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
-//	}
-//}
+if (mouse_check_button(mb_right)) {
+	if (!aiming) {
+		aiming = true;
+		spd = 2;
+		aimOffset = aimingAccuracy
+		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
+	}
+}
+else {
+	if (aiming) {
+		aiming = false;
+		spd = basespd;
+		aimOffset = hipFireAccuracy;
+		//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
+	}
+}
 
 //tick down cooldown every frame
 if (cooldown > 0) cooldown--; 
