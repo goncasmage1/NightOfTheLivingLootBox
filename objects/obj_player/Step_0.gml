@@ -19,10 +19,6 @@ if (mouse_check_button(mb_left))
 {
 	if (cooldown == 0)
 	{
-		//reduce ammo of special weapon if necessary
-		ammo--;
-		
-		
 		//fire normal weapon (1 bullet)
 		if (weapon == 0)
 		{
@@ -34,6 +30,8 @@ if (mouse_check_button(mb_left))
 		}
 		else if (weapon == 1 && ammo > 1)
 		{	
+			//reduce ammo of special weapon if necessary
+			ammo--;
 			bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
 			newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
 			//bullet = instance_create_layer(x + lengthdir_x(59, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet2);
