@@ -19,13 +19,7 @@ if (mouse_check_button(mb_left))
 {
 	if (cooldown == 0)
 	{
-<<<<<<< HEAD
-		//reduce ammo of special weapon if necessary
-		
-		
-		
-=======
->>>>>>> 68d850a6de3763056ce9cc8fec45bbfdc63b741d
+
 		//fire normal weapon (1 bullet)
 		if (weapon == 0)
 		{
