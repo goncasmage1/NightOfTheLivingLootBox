@@ -1,3 +1,4 @@
+/// @description Throw money
 if (money>0)
 	{
 	distraction = instance_create_layer(x,y,"lay_bullets",obj_distr);

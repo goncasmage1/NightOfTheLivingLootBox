@@ -1,19 +1,12 @@
 if (!levellingUp) {
 
 	direction = point_direction(x,y,mouse_x,mouse_y);
-
-	if (weapon == 0)
-	{
-		sprite_index = spr_player_default_weapon;
-	}
-	if (weapon == 1 && there_was_collision == 1)
-	{
-		sprite_index = spr_player_fireStaff;
-	}
-	if (weapon > 1)
-	{
-		weapon = 0;
-	}
+	
+	if (weapon > 1) weapon = 0;
+	
+	if (weapon == 0) sprite_index = spr_player_default_weapon;
+	if (weapon == 1 && there_was_collision == 1) sprite_index = spr_player_fireStaff;
+	
 
 	//Fire when pressing the left mouse button
 	if (mouse_check_button(mb_left)) 
@@ -45,24 +38,6 @@ if (!levellingUp) {
 		}
 	}
 
-	//aim when pressing the right mouse button (slow movement)
-	if (mouse_check_button(mb_right)) {
-		if (!aiming) {
-			aiming = true;
-			spd = 2;
-			aimOffset = aimingAccuracy
-			//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])/aimingZoom, camera_get_view_height(view_camera[0])/aimingZoom);
-		}
-	}
-	else {
-		if (aiming) {
-			aiming = false;
-			spd = basespd;
-			aimOffset = hipFireAccuracy;
-			//camera_set_view_size(view_camera[0], camera_get_view_width(view_camera[0])*aimingZoom, camera_get_view_height(view_camera[0])*aimingZoom);
-		}
-	}
-
 	//slowly decay any applied shake
 	shake *= 0.9;
 	//screenshake
@@ -71,26 +46,51 @@ if (!levellingUp) {
 
 	//tick down cooldown every frame
 	if (cooldown > 0) cooldown--; 
-
-	//Move in four directions when pressing arrow keys.
-	if (keyboard_check(ord("A"))) 
+	
+	//Normalize speed
+	if (move_x != 0 and move_y != 0) {
+		if (!normalizingSpeed) {
+			normalizingSpeed = true;
+			spd = sqrt(spd*spd/2);
+		}
+		if (aiming) {
+			aiming = false;
+			aimOffset = movingAccuracy;
+		}
+	}
+	else {
+		if (normalizingSpeed) {
+			normalizingSpeed = false;
+			spd = basespd;
+		}
+		if (move_x == 0 and move_y == 0) {
+			if (!aiming) {
+				aiming = true;
+				aimOffset = aimingAccuracy;
+			}
+		}
+		else {
+			if (aiming) {
+				aiming = false;
+				aimOffset = movingAccuracy;
+			}	
+		}
+	}
+	
+	//Move player
+	if (move_x != 0) 
 	{	
-		if (!place_meeting(x - spd - collision_offset, y, obj_wall)) x-= spd;
-		
+		if (!place_meeting(x + (spd + collision_offset) * move_x, y, obj_wall)) {
+			x += spd * move_x;
+		}
 	}
-	if (keyboard_check(ord("D")))
+	if (move_y != 0) 
 	{
-		if (!place_meeting(x + spd + collision_offset, y, obj_wall)) x+= spd;
+		if (!place_meeting(x, y + (spd + collision_offset) * move_y, obj_wall)) { 
+			y += spd * move_y;
+		}
 	}
-	if (keyboard_check(ord("W")))
-	{
-		if (!place_meeting(x, y - spd - collision_offset, obj_wall)) y-= spd;
-	}
-	if (keyboard_check(ord("S")))
-	{
-		if (!place_meeting(x, y + spd + collision_offset, obj_wall)) y+= spd;
-	}
-
+	
 	//angle sprite towards mouse cursor
 	image_angle = point_direction(x,y,mouse_x,mouse_y);
 }
