@@ -4,9 +4,16 @@ if (!levellingUp) {
 	
 	if (weapon > 1) weapon = 0;
 	
-	if (weapon == 0) sprite_index = spr_player_default_weapon;
-	if (weapon == 1 && there_was_collision == 1) sprite_index = spr_player_fireStaff;
-	
+	switch (weapon) {
+		case 0:
+			sprite_index = spr_player_default_weapon;
+			firingInterval = 15;
+			break;
+		case 1:
+			if (there_was_collision == 1) sprite_index = spr_player_fireStaff;
+			firingInterval = 7;
+			break;
+	}
 
 	//Fire when pressing the left mouse button
 	if (mouse_check_button(mb_left)) 
@@ -34,7 +41,7 @@ if (!levellingUp) {
 			
 			}
 			//set cooldown to current weaponspeed
-			cooldown = weaponspd;
+			cooldown = firingInterval;
 		}
 	}
 
