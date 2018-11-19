@@ -76,6 +76,7 @@ if (!levellingUp) {
 	if (keyboard_check(ord("A"))) 
 	{	
 		if (!place_meeting(x - spd - collision_offset, y, obj_wall)) x-= spd;
+		
 	}
 	if (keyboard_check(ord("D")))
 	{
