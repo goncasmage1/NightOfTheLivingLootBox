@@ -20,7 +20,7 @@ if (mouse_check_button(mb_left))
 	if (cooldown == 0)
 	{
 		//reduce ammo of special weapon if necessary
-		ammo--;
+		
 		
 		
 		//fire normal weapon (1 bullet)
@@ -39,6 +39,7 @@ if (mouse_check_button(mb_left))
 			//bullet = instance_create_layer(x + lengthdir_x(59, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet2);
 			bullet.direction = newDir;
 			bullet.image_angle = bullet.direction;
+			ammo--;
 			
 		}
 		//set cooldown to current weaponspeed
