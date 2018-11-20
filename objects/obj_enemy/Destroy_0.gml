@@ -1,3 +1,10 @@
+obj_spawner.round_enemies -= 1;
+
+if(obj_spawner.round_enemies == 0){
+	obj_player.rounds += 1;
+	obj_spawner.round_enemies = floor(4.2 * (obj_player.rounds * 1.8));
+}
+
 //Create fragments and enemy splatter on death
 repeat(choose(5,8)) instance_create_layer(x,y,"lay_enemy",obj_fragment);
 with (instance_create_layer(x,y,"lay_splatter",obj_splatter)) image_angle = other.direction;

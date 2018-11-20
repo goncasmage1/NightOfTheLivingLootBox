@@ -28,6 +28,20 @@ draw_set_font(fnt_score);
 draw_text(
 	camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
 	camera_get_view_y(view_camera[0])+54,obj_player.rounds);
+	
+//ENEMY COUNTER
+draw_set_alpha(1);
+draw_set_colour(c_white);
+draw_set_font(fnt_smaller);
+draw_text(
+	camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
+	camera_get_view_y(view_camera[0])+16,"Enemies Left");
+	
+
+draw_set_font(fnt_smaller);
+draw_text(
+	camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
+	camera_get_view_y(view_camera[0])+54,obj_spawner.round_enemies);
 
 //MONEY
 draw_set_halign(fa_left);
