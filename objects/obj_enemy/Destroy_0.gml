@@ -5,11 +5,10 @@ if(obj_spawner.round_enemies == 0){
 	obj_spawner.round_enemies = floor(4.2 * (obj_player.rounds * 1.8));
 }
 
-//Create fragments and enemy splatter on death
-repeat(choose(5,8)) instance_create_layer(x,y,"lay_enemy",obj_fragment);
+//Create enemy splatter on death
 with (instance_create_layer(x,y,"lay_splatter",obj_splatter)) image_angle = other.direction;
 
-var luck = irandom_range(1,20);
+var luck = irandom_range(1,40);
 if(luck == 1) {
 	with (instance_create_layer(x,y,"lay_splatter",obj_cash)) image_angle = other.direction;
 }

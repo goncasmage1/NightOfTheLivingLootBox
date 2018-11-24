@@ -1,5 +1,5 @@
 //Initialize variables
-hp = 5;			//number of hits the enemy can take
+hp = 4;			//number of hits the enemy can take
 hit = 0;		//whether or not the enemy has been hit this frame
 spd = 2;		//movement speed
 collisionOffset = 10.0;

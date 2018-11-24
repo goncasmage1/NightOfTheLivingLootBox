@@ -263,14 +263,6 @@
             }
         },
         {
-            "Key": "821a0b3d-0540-4d38-a241-5315071172e8",
-            "Value": {
-                "id": "eb65350d-03af-4240-96ec-575fea9bbed2",
-                "resourcePath": "objects\/obj_fragment\/obj_fragment.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "85e05868-7ab5-4482-a82b-0c246ef83e3e",
             "Value": {
                 "id": "0c4f76a9-b952-4787-a94f-739895be139f",
