@@ -1,4 +1,4 @@
-var finalSpd = max(spd-(hit*spd),0);
+var finalSpd = max(spd-(hit*spd),0) + floor(obj_player.rounds / 5) * 0.3;
 
 mp_potential_settings(45, 5, 5, 1);
 
