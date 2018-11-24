@@ -17,30 +17,39 @@ else {
 if (target == obj_player) {
 	
 	var distance = distance_to_object(obj_player);
+	
+	if (isAttacking or attackCounter > 0.0) {
+		attackCounter = attackCounter + delta_time;
+		if (attackCounter >= attackInterval) {
+			if (isAttacking) {
+				attackCounter = attackCounter - attackInterval;
+				obj_player.money = obj_player.money - damage;
+				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
+				if (obj_player.money <= 0) {
+					game_restart();	
+				}
+			}
+			else {
+				attackCounter = 0.0;
+			}
+		}
+	}
+	
 	if (distance <= attackStartProximity) {
 		if (!isAttacking) {
 			isAttacking = true;
-			obj_player.money = obj_player.money - damage;
-			if (obj_player.money <= 0) {
-				game_restart();	
+			if (attackCounter == 0.0) {
+				obj_player.money = obj_player.money - damage;
+				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
+				if (obj_player.money <= 0) {
+					game_restart();	
+				}
 			}
-		}
-		
-		attackCounter = attackCounter + delta_time;
-		if (attackCounter >= attackInterval) {
-			obj_player.money = obj_player.money - damage;
-			if (obj_player.money <= 0) {
-				game_restart();	
-			}
-			attackCounter = 0.0;
 		}
 	}
 	else {
 		if (isAttacking) {
-			if (distance >= attackEndProximity) {
-				isAttacking = false;
-				attackCounter = 0.0;
-			}
+			if (distance >= attackEndProximity) isAttacking = false;
 		}
 		else {
 			var dir = point_direction(x, y, target.x, target.y);

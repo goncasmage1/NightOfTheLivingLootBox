@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "784c8eac-587d-4609-95eb-9efbf8794a52",
+            "Value": {
+                "id": "71980715-096b-4896-9485-5f79b1d66fd0",
+                "resourcePath": "sounds\\Roblox_Death_Sound_Effect\\Roblox_Death_Sound_Effect.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7a8ce375-af21-4f29-bd0f-936ce91ff455",
             "Value": {
                 "id": "6d6cb5ed-4beb-454e-ad07-e4ee08000ef3",
