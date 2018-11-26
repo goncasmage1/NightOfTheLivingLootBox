@@ -49,7 +49,7 @@ if (!levellingUp) {
 	shake *= 0.9;
 	//screenshake
 	var cam = view_camera[0] 
-	camera_set_view_pos(cam,camera_get_view_x(cam)+random_range(-shake,shake),camera_get_view_y(cam)+random_range(-shake,shake)) 
+	camera_set_view_pos(cam,camera_get_view_x(cam)+random_range(-shake,shake),camera_get_view_y(cam)+random_range(-shake,shake)); 
 
 	//tick down cooldown every frame
 	if (cooldown > 0) cooldown--; 
