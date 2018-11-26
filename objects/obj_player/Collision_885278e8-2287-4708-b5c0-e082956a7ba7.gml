@@ -1,3 +1,7 @@
 /// @description Player picks cash up
-instance_destroy(other);
-money = money + 10;
+if (money < maxMoney) {
+	instance_destroy(other);
+	
+	if (money + 10 < maxMoney) money = money + 10;
+	else money = maxMoney;
+}

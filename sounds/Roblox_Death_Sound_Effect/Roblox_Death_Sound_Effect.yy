@@ -1,8 +1,8 @@
 {
-    "id": "ccc77cfc-e299-49c2-8781-1988ad9276ec",
+    "id": "784c8eac-587d-4609-95eb-9efbf8794a52",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_shot",
+    "name": "Roblox_Death_Sound_Effect",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.1
+    "volume": 1
 }

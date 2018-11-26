@@ -223,14 +223,6 @@
             }
         },
         {
-            "Key": "6c90bb3a-635c-4b87-b7c1-40b7e1a555ec",
-            "Value": {
-                "id": "e1b11f6a-0e60-4b81-b9a6-19891602a4c7",
-                "resourcePath": "rooms\/default\/default.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "700b759e-25ff-4381-9ce8-ad095c3784c8",
             "Value": {
                 "id": "c1457d33-2843-420e-ae8a-b349191008bc",
@@ -255,19 +247,19 @@
             }
         },
         {
+            "Key": "784c8eac-587d-4609-95eb-9efbf8794a52",
+            "Value": {
+                "id": "71980715-096b-4896-9485-5f79b1d66fd0",
+                "resourcePath": "sounds\\Roblox_Death_Sound_Effect\\Roblox_Death_Sound_Effect.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7a8ce375-af21-4f29-bd0f-936ce91ff455",
             "Value": {
                 "id": "6d6cb5ed-4beb-454e-ad07-e4ee08000ef3",
                 "resourcePath": "fonts\/fnt_smaller\/fnt_smaller.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "821a0b3d-0540-4d38-a241-5315071172e8",
-            "Value": {
-                "id": "eb65350d-03af-4240-96ec-575fea9bbed2",
-                "resourcePath": "objects\/obj_fragment\/obj_fragment.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -327,10 +319,10 @@
             }
         },
         {
-            "Key": "a1c1101b-e077-4fe5-bb81-386a6de5ca4b",
+            "Key": "a19443b3-863b-468b-bbef-98afcce3107c",
             "Value": {
-                "id": "55812d4a-b355-49e0-89cc-6cb380d2e8cc",
-                "resourcePath": "rooms\/rm_start\/rm_start.yy",
+                "id": "7bb868f1-b9d6-4d9c-90b0-0d04eef6871e",
+                "resourcePath": "rooms\\intro\\intro.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -407,14 +399,6 @@
             }
         },
         {
-            "Key": "c92f708c-42ac-475e-bdef-c1673b983a88",
-            "Value": {
-                "id": "2eb98b15-1902-4f3d-b3a9-62d8bf7cbae6",
-                "resourcePath": "objects\/obj_menu\/obj_menu.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "6753db5d-5f38-4ca5-99a5-63c2b9623149",
@@ -452,14 +436,6 @@
                 "id": "bb6afe63-f0e0-48b4-8a02-69a6b285d5c6",
                 "resourcePath": "sprites\/spr_enemy_flash\/spr_enemy_flash.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e3fcee56-dcd7-4f65-8845-01a7d8f27cf3",
-            "Value": {
-                "id": "4aee6008-b8d7-4983-9db8-27566edcdd50",
-                "resourcePath": "objects\/obj_camera\/obj_camera.yy",
-                "resourceType": "GMObject"
             }
         },
         {

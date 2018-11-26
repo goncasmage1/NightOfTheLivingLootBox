@@ -1,20 +1,22 @@
-/// @description Insert description here
-// You can write your code in this editor
-var dir_x = lengthdir_x(1, direction);
-var dir_y = lengthdir_y(1, direction);
-	
-var xMove = dir_x * spd;
-var yMove = dir_y * spd;
 
-x_flag = (!place_meeting(x + xMove, y, obj_avoid)) ? false : true;
-y_flag = (!place_meeting(x, y + yMove, obj_avoid)) ? false : true;
+if (spd > 0) {
+	var dir_x = lengthdir_x(1, direction);
+	var dir_y = lengthdir_y(1, direction);
 	
-if (range <= 0 || x_flag || y_flag)
-{
-	spd = 0;
+	var xMove = dir_x * spd;
+	var yMove = dir_y * spd;
+
+	x_flag = (!place_meeting(x + xMove, y, obj_avoid)) ? false : true;
+	y_flag = (!place_meeting(x, y + yMove, obj_avoid)) ? false : true;
+	
+	if (range <= 0 || x_flag || y_flag)
+	{
+		spd = 0;
+	}
+	else {
+		x += xMove;
+		y += yMove;
+	
+		range = range - 1;
+	}
 }
-else {
-x += xMove;
-y += yMove;
-	
-range = range - 1;}
