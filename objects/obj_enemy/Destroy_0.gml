@@ -4,6 +4,11 @@ if(obj_spawner.round_enemies == 0){
 	obj_player.rounds += 1;
 	obj_spawner.enemyQuantity = floor(obj_spawner.enemyQuantity * obj_spawner.enemyQuantityIncrease);
 	obj_spawner.round_enemies = obj_spawner.enemyQuantity;
+	if (obj_player.levelsToUpgrade > 0)
+	{
+		//instance_deactivate_all(true);
+		room_goto(rm_menu);
+	}
 }
 
 //Create enemy splatter on death

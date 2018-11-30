@@ -1,1 +1,4 @@
-room_goto_next();
+if (room == intro)
+{
+	room_goto_next();
+}

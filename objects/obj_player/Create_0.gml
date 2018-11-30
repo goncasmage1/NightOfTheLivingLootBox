@@ -11,6 +11,7 @@ money = 100;			//amount of money (health) the player has
 maxMoney = 100;
 moneyThrowAmount = 5;
 xp = 0;
+max_xp = 10;
 maxMoney = 100;
 enemyDamage = 20;
 aiming = false;
@@ -21,7 +22,7 @@ rounds = 1;
 collision_offset = 10;
 there_was_collision = 0;
 shake = 0;
-
+levelsToUpgrade = 0;
 levellingUp = false;
 
 abilitiesText = ["Increase max Money", "Increase movement speed"];

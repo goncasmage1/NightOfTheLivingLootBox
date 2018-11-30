@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1db6ef08-3067-454d-bed8-8c1eb1407431",
+            "Value": {
+                "id": "697f6285-74e6-48d1-9dd0-085dc039ff66",
+                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1ed01c8a-2e47-4cc6-b8df-b9bbe995bde9",
             "Value": {
                 "id": "512f6db3-ecc8-4c6a-b1fd-f05e214ab682",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "9fc61d96-a76b-4624-9798-6e5640bc0d7d",
+            "Value": {
+                "id": "ba6a29c8-84dc-4562-a1c9-727d3f1711ca",
+                "resourcePath": "rooms\\levelup\\levelup.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9fd00035-95e4-4935-993b-b844894d8250",
             "Value": {
                 "id": "4ddbfa81-ff8e-4528-88fa-28ac7ce6ddbc",
@@ -455,6 +471,14 @@
             }
         },
         {
+            "Key": "edd084d5-0b13-40e4-85c8-a126115c6818",
+            "Value": {
+                "id": "a012bf02-e9b6-4067-a58b-b72bfe31902a",
+                "resourcePath": "objects\\obj_levelup_OR_menu\\obj_levelup_OR_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eeb25668-2d9b-4870-837b-b802c2392817",
             "Value": {
                 "id": "a471256d-d10e-4cc1-87bf-aa165fa7a318",
@@ -479,6 +503,14 @@
             }
         },
         {
+            "Key": "f3a67031-cf81-45e7-88dd-ee430a3dd18b",
+            "Value": {
+                "id": "bdbd88d5-a12f-4add-8cdf-f0bb39c6d833",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "3d5bba2f-42a9-4505-8e9a-44970aa49a6c",
@@ -493,10 +525,19 @@
                 "resourcePath": "objects\/obj_cash\/obj_cash.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "fd3bbf6e-878c-416b-9f13-90ef57aba2d1",
+            "Value": {
+                "id": "cfc85f39-3945-4321-8bf4-84ff93d7c693",
+                "resourcePath": "scripts\\scr_menu\\scr_menu.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        "1f1ca95c-a72a-4868-a07e-61a02023f2de"
+        "1f1ca95c-a72a-4868-a07e-61a02023f2de",
+        "fd3bbf6e-878c-416b-9f13-90ef57aba2d1"
     ],
     "tutorial": ""
 }

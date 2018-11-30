@@ -68,4 +68,12 @@ else {
 if (hit > 0) hit -= 0.05; else hit = 0;
 
 //Destroy if hp is less than or equal to 0
-if (hp <= 0) instance_destroy();
+if (hp <= 0) {
+	obj_player.xp += 1;
+	if(obj_player.xp == obj_player.max_xp)
+	{
+		obj_player.levelsToUpgrade += 1;
+		
+	}
+	instance_destroy();
+}
