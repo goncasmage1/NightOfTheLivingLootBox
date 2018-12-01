@@ -14,9 +14,15 @@ if(obj_spawner.round_enemies == 0){
 //Create enemy splatter on death
 with (instance_create_layer(x,y,"lay_splatter",obj_splatter)) image_angle = other.direction;
 
-var luck = irandom_range(1,30);
-if(luck == 1) {
+var moneyLuck = irandom_range(1,30);
+if(moneyLuck == 1) {
 	with (instance_create_layer(x,y,"lay_splatter",obj_cash)) image_angle = other.direction;
+}
+else {
+	var ammoLuck = irandom_range(1,12);
+	if (ammoLuck == 1) {
+		instance_create_layer(x,y,"lay_text",obj_weapon);
+	}
 }
 
 //Play sound
