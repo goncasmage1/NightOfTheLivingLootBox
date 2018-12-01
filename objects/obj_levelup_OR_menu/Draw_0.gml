@@ -19,17 +19,17 @@ if (room == rm_menu)
 		draw_text(x + space, y + m*space, menu_pause[m])
 	}
 
-	draw_sprite(sprite_index, 0, x + 16, y + mpos_menu*space);
+	draw_sprite(sprite_index, 0, x + 16, y + mpos_menu*space - 30);
 }
 
 if (room == levelup)
 {
-	var j;
+	j = 0;
 
 	for (j = 0; j < array_length_1d(abilities); j += 1)
-{
-	draw_text(x + space, y + j*space, abilities[j])
-}
+	{
+		draw_text(x + space, y + j*space, abilities[j])
+	}
 
-	draw_sprite(sprite_index, 0, x + 16, y + mpos_levelup_menu*space);
+	draw_sprite(sprite_index, 0, x + 16, y + mpos_levelup_menu*space - 30);
 }

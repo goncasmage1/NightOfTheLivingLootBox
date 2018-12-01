@@ -7,13 +7,13 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0])+16,"Round");
+		2+camera_get_view_y(view_camera[0])+32,"Round");
 	
 
 	draw_set_font(fnt_score);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0])+54,obj_player.rounds);
+		2+camera_get_view_y(view_camera[0])+80,obj_player.rounds);
 
 
 	//REGULAR TEXT
@@ -22,13 +22,13 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+16,"Round");
+		camera_get_view_y(view_camera[0])+33,"Round");
 	
 
 	draw_set_font(fnt_score);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+54,obj_player.rounds);
+		camera_get_view_y(view_camera[0])+81,obj_player.rounds);
 	
 	//ENEMY COUNTER
 	draw_set_alpha(1);
@@ -36,13 +36,13 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
-		camera_get_view_y(view_camera[0])+16,"Enemies Left");
+		camera_get_view_y(view_camera[0])+32,"Enemies Left");
 	
 
 	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
-		camera_get_view_y(view_camera[0])+54,obj_spawner.round_enemies);
+		camera_get_view_y(view_camera[0])+75,obj_spawner.round_enemies);
 
 	//MONEY
 	draw_set_halign(fa_left);
@@ -62,6 +62,22 @@ if (room == level1) {
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+180,
 		2+camera_get_view_y(view_camera[0])+32, obj_player.money);
+		
+	// /
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+250,
+		2+camera_get_view_y(view_camera[0])+32, "/");
+		
+	//MaxAmount
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+270,
+		2+camera_get_view_y(view_camera[0])+32, obj_player.maxMoney);
 }
 else if (room == intro) {
 	draw_set_halign(fa_center);
