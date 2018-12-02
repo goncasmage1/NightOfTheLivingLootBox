@@ -1,5 +1,5 @@
 menu_pause = ["Continue", "Level up / Invest"];
-
+obj_player.money = obj_player.maxMoney
 space = 110;
 mpos_menu = 0;
 mpos_levelup_menu = 0;
