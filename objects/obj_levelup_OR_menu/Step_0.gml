@@ -68,7 +68,9 @@ if (room == levelup)
 				break;
 			}
 		}
-		room_goto(level1);
+		obj_player.levelsToUpgrade -= 1;
+		if (obj_player.levelsToUpgrade > 0) room_goto(rm_menu);
+		else room_goto(level1);
 	}
 }
 

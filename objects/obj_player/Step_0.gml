@@ -10,7 +10,7 @@ if (room == level1)
 			firingInterval = 15;
 			break;
 		case 1:
-			if (there_was_collision == 1) sprite_index = spr_player_fireStaff;
+			sprite_index = spr_player_fireStaff;
 			firingInterval = 7;
 			break;
 	}
@@ -29,7 +29,7 @@ if (room == level1)
 				bullet.direction = newDir;
 				bullet.image_angle = bullet.direction;
 			}
-			else if (weapon == 1 && ammo > 1)
+			else if (weapon == 1 && ammo > 0)
 			{	
 				//reduce ammo of special weapon if necessary
 				ammo--;

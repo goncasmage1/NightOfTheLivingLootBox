@@ -78,6 +78,55 @@ if (room == level1) {
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+270,
 		2+camera_get_view_y(view_camera[0])+32, obj_player.maxMoney);
+	
+	//XP
+	//Text
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+32,
+		2+camera_get_view_y(view_camera[0])+80, "XP: ");
+
+	//XP
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+100,
+		2+camera_get_view_y(view_camera[0])+80, obj_player.xp);
+		
+	// /
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+170,
+		2+camera_get_view_y(view_camera[0])+80, "/");
+		
+	//MaxHP
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+190,
+		2+camera_get_view_y(view_camera[0])+80, obj_player.max_xp);
+		
+	//Text
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+32,
+		2+camera_get_view_y(view_camera[0])+140, "Ammo: ");
+
+	//Amount
+	draw_set_alpha(1);
+	draw_set_colour(c_white);
+	draw_set_font(fnt_smaller);
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+180,
+		2+camera_get_view_y(view_camera[0])+140, obj_player.weapon ? obj_player.ammo : "9999");
 }
 else if (room == intro) {
 	draw_set_halign(fa_center);
