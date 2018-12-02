@@ -11,10 +11,24 @@ if(obj_spawner.round_enemies == 0){
 	obj_player.rounds += 1;
 	obj_spawner.enemyQuantity = floor(obj_spawner.enemyQuantity * obj_spawner.enemyQuantityIncrease);
 	obj_spawner.round_enemies = obj_spawner.enemyQuantity;
+	
+	//Add experience
+	with (obj_player) {
+		xp += betPile * 15;
+	
+		betPile = 0;
+	}
+	
+	if(obj_player.xp >= obj_player.max_xp)
+	{
+		obj_player.levelsToUpgrade += 1;
+		obj_player.max_xp = floor(obj_player.max_xp * obj_player.xp_increase);
+	}
+
 	if (obj_player.levelsToUpgrade > 0)
 	{
 		//instance_deactivate_all(true);
-		room_goto(rm_menu);
+		room_goto(menu);
 	}
 }
 

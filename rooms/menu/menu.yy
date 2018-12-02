@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_menu",
+    "name": "menu",
     "id": "1db6ef08-3067-454d-bed8-8c1eb1407431",
     "creationCodeFile": "",
     "inheritCode": false,

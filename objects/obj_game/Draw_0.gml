@@ -119,7 +119,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+32,
-		2+camera_get_view_y(view_camera[0])+140, "Ammo: ");
+		2+camera_get_view_y(view_camera[0])+128, "Ammo: ");
 
 	//Amount
 	draw_set_alpha(1);
@@ -127,7 +127,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+180,
-		2+camera_get_view_y(view_camera[0])+140, obj_player.weapon ? obj_player.ammo : "9999");
+		2+camera_get_view_y(view_camera[0])+128, obj_player.weapon ? obj_player.ammo : "9999");
 }
 else if (room == intro) {
 	draw_set_halign(fa_center);

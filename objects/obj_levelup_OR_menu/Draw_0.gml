@@ -10,7 +10,7 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_score);
 draw_set_color(c_green);
 
-if (room == rm_menu)
+if (room == menu)
 {
 	var m;
 
@@ -22,7 +22,7 @@ if (room == rm_menu)
 	draw_sprite(sprite_index, 0, x + 16, y + mpos_menu*space - 30);
 }
 
-if (room == levelup)
+else if (room == levelup)
 {
 	j = 0;
 
@@ -32,4 +32,22 @@ if (room == levelup)
 	}
 
 	draw_sprite(sprite_index, 0, x + 16, y + mpos_levelup_menu*space - 30);
+}
+
+else if (room == invest)
+{
+	j = 0;
+
+	for (j = 0; j < array_length_1d(invest_options); j += 1)
+	{
+		draw_text(x + space, y + j*space, invest_options[j])
+	}
+	
+	draw_text(x + space + 800, y + (array_length_1d(invest_options) / 2)*space - 100, "x");
+	draw_text(x + space + 850, y + (array_length_1d(invest_options) / 2)*space - 100, obj_player.betPile);
+	
+	draw_text(x + space + 800, y + (array_length_1d(invest_options) / 2)*space, "money:");
+	draw_text(x + space + 1100, y + (array_length_1d(invest_options) / 2)*space, obj_player.money);
+
+	draw_sprite(sprite_index, 0, x + 16, y + mpos_invest_menu*space - 30);
 }

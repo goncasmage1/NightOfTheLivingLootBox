@@ -82,7 +82,7 @@
             "Key": "1db6ef08-3067-454d-bed8-8c1eb1407431",
             "Value": {
                 "id": "697f6285-74e6-48d1-9dd0-085dc039ff66",
-                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourcePath": "rooms\\menu\\menu.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -396,6 +396,14 @@
                 "id": "bb6dba21-7f88-4942-b510-bf448a8a80b0",
                 "resourcePath": "sprites\/spr_title\/spr_title.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b71dd37b-d91b-41cd-81fa-c965b56bcdd1",
+            "Value": {
+                "id": "ec255fa7-0780-40ab-97b6-b8bbeb080541",
+                "resourcePath": "rooms\\invest\\invest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
