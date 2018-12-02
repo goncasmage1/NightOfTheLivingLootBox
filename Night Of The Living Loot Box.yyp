@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "a9d5036d-68fd-4699-b5f8-9f7c4bd4ce1b",
+            "Value": {
+                "id": "54c7494b-f059-4046-9b71-7c58477b95da",
+                "resourcePath": "scripts\\NextRound\\NextRound.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "aba626b8-ef74-4371-b7b8-5ce3f04ea05c",
             "Value": {
                 "id": "22dc444f-85ee-4867-8b32-fd1312e31a61",
@@ -537,7 +545,7 @@
     ],
     "script_order": [
         "1f1ca95c-a72a-4868-a07e-61a02023f2de",
-        "fd3bbf6e-878c-416b-9f13-90ef57aba2d1"
+        "a9d5036d-68fd-4699-b5f8-9f7c4bd4ce1b"
     ],
     "tutorial": ""
 }

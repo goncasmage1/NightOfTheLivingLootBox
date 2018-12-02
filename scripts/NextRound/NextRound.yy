@@ -1,8 +1,8 @@
 {
-    "id": "a9bca906-b429-4730-b38f-e24ed0a73a2d",
+    "id": "a9d5036d-68fd-4699-b5f8-9f7c4bd4ce1b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "startRound",
+    "name": "NextRound",
     "IsCompatibility": false,
     "IsDnD": false
 }
