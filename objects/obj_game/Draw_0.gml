@@ -101,7 +101,7 @@ if (room == level1) {
 	draw_set_colour(c_white);
 	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+170,
+		2+camera_get_view_x(view_camera[0])+190,
 		2+camera_get_view_y(view_camera[0])+80, "/");
 		
 	//MaxHP
@@ -109,9 +109,10 @@ if (room == level1) {
 	draw_set_colour(c_white);
 	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+190,
+		2+camera_get_view_x(view_camera[0])+210,
 		2+camera_get_view_y(view_camera[0])+80, obj_player.max_xp);
 		
+	//AMMO
 	//Text
 	draw_set_alpha(1);
 	draw_set_colour(c_white);

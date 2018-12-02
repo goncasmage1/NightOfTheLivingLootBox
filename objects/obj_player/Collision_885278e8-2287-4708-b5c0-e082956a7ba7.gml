@@ -2,6 +2,6 @@
 if (money < maxMoney) {
 	instance_destroy(other);
 	
-	if (money + 10 < maxMoney) money = money + 10;
+	if (money + moneyRegen < maxMoney) money = money + moneyRegen;
 	else money = maxMoney;
 }

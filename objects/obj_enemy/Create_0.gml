@@ -10,7 +10,6 @@ isAttacking = false;
 attackStartProximity = 5.5;
 attackEndProximity = 6.0;
 target = obj_player;
-damage = 30.0;
 x_flag = false;
 y_flag = false;
 x_lock = false;

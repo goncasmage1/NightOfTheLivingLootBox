@@ -23,7 +23,7 @@ if (target == obj_player) {
 		if (attackCounter >= attackInterval) {
 			if (isAttacking) {
 				attackCounter = attackCounter - attackInterval;
-				obj_player.money = obj_player.money - damage;
+				obj_player.money = obj_player.money - obj_player.enemyDamage;
 				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
 				if (obj_player.money <= 0) {
 					game_restart();	
@@ -39,7 +39,7 @@ if (target == obj_player) {
 		if (!isAttacking) {
 			isAttacking = true;
 			if (attackCounter == 0.0) {
-				obj_player.money = obj_player.money - damage;
+				obj_player.money = obj_player.money - obj_player.enemyDamage;
 				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
 				if (obj_player.money <= 0) {
 					game_restart();	

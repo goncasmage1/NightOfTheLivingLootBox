@@ -64,6 +64,16 @@ if (room == levelup)
 			}
 			case 2:
 			{
+				obj_player.moneyRegen += 5;
+				break;
+			}
+			case 3:
+			{
+				obj_player.enemyDamage -= 4;
+				break;
+			}
+			case 4:
+			{
 				obj_levelup_OR_menu.pause = 1;
 				break;
 			}
