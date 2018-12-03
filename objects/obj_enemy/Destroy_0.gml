@@ -14,7 +14,7 @@ if(obj_spawner.round_enemies == 0){
 	
 	//Add experience
 	with (obj_player) {
-		xp += betPile * 15;
+		xp += betPile * bonus_xp;
 	
 		betPile = 0;
 	}

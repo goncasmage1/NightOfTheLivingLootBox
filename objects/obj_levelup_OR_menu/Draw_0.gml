@@ -50,7 +50,7 @@ else if (room == invest)
 	draw_text(x + space + 1200, y + (array_length_1d(invest_options) / 2)*space - 50, obj_player.money);
 	
 	draw_text(x + space + 900, y + (array_length_1d(invest_options) / 2)*space + 50, "bonus xp:");
-	draw_text(x + space + 1350, y + (array_length_1d(invest_options) / 2)*space + 50, invest_increment * obj_player.betPile);
+	draw_text(x + space + 1350, y + (array_length_1d(invest_options) / 2)*space + 50, obj_player.bonus_xp * obj_player.betPile);
 
 	draw_sprite(sprite_index, 0, x + 16, y + mpos_invest_menu*space - 30);
 }
