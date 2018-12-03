@@ -54,14 +54,14 @@ if (target == obj_player) {
 		else {
 			var dir = point_direction(x, y, target.x, target.y);
 			image_angle = dir;
-			mp_potential_step_object(target.x, target.y, finalSpd, obj_avoid);
+			mp_potential_step_object(target.x, target.y, finalSpd, obj_wall);
 		}
 	}
 }
 else {
 	var dir = point_direction(x, y, target.x, target.y);
 		image_angle = dir;
-		mp_potential_step_object(target.x, target.y, finalSpd, obj_avoid);
+		mp_potential_step_object(target.x, target.y, finalSpd, obj_wall);
 }
 
 //Gradually reduce "just hit" effect
