@@ -6,8 +6,8 @@ if (spd > 0) {
 	var xMove = dir_x * spd;
 	var yMove = dir_y * spd;
 
-	x_flag = (!place_meeting(x + xMove, y, obj_avoid)) ? false : true;
-	y_flag = (!place_meeting(x, y + yMove, obj_avoid)) ? false : true;
+	x_flag = (!place_meeting(x + xMove, y, obj_wall)) ? false : true;
+	y_flag = (!place_meeting(x, y + yMove, obj_wall)) ? false : true;
 	
 	if (range <= 0 || x_flag || y_flag)
 	{
