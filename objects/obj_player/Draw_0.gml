@@ -13,7 +13,7 @@ if (room == level1) {
 	draw_set_font(fnt_score);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0])+80,obj_player.rounds);
+		2+camera_get_view_y(view_camera[0])+80,rounds);
 
 
 	//REGULAR TEXT
@@ -28,7 +28,7 @@ if (room == level1) {
 	draw_set_font(fnt_score);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+81,obj_player.rounds);
+		camera_get_view_y(view_camera[0])+81,rounds);
 	
 	//ENEMY COUNTER
 	draw_set_alpha(1);
@@ -61,7 +61,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+180,
-		2+camera_get_view_y(view_camera[0])+32, obj_player.money);
+		2+camera_get_view_y(view_camera[0])+32, money);
 		
 	// /
 	draw_set_alpha(1);
@@ -77,7 +77,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+270,
-		2+camera_get_view_y(view_camera[0])+32, obj_player.maxMoney);
+		2+camera_get_view_y(view_camera[0])+32, maxMoney);
 	
 	//XP
 	//Text
@@ -94,7 +94,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+100,
-		2+camera_get_view_y(view_camera[0])+80, obj_player.xp);
+		2+camera_get_view_y(view_camera[0])+80, xp);
 		
 	// /
 	draw_set_alpha(1);
@@ -110,7 +110,7 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+210,
-		2+camera_get_view_y(view_camera[0])+80, obj_player.max_xp);
+		2+camera_get_view_y(view_camera[0])+80, max_xp);
 		
 	//AMMO
 	//Text
@@ -127,7 +127,10 @@ if (room == level1) {
 	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+180,
-		2+camera_get_view_y(view_camera[0])+128, obj_player.weapon ? obj_player.ammo : "9999");
+		2+camera_get_view_y(view_camera[0])+128, weapon ? ammo : "9999");
+		
+	draw_self();
+
 }
 else if (room == intro) {
 	draw_set_halign(fa_center);

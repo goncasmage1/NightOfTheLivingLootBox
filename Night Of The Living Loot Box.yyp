@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "1ed01c8a-2e47-4cc6-b8df-b9bbe995bde9",
-            "Value": {
-                "id": "512f6db3-ecc8-4c6a-b1fd-f05e214ab682",
-                "resourcePath": "tilesets\/tileset_1\/tileset_1.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "1f1ca95c-a72a-4868-a07e-61a02023f2de",
             "Value": {
                 "id": "17b2f394-035b-4b63-834e-bd31f7a9e3ed",
@@ -164,14 +156,6 @@
                 "id": "07a50f23-488b-4592-aafc-9d491505c732",
                 "resourcePath": "fonts\/fnt_score\/fnt_score.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "4db411d9-f881-47ae-a5a3-f7ed036c2bae",
-            "Value": {
-                "id": "6f771bec-e317-453a-9b6c-27b6f9c355d2",
-                "resourcePath": "objects\/obj_game\/obj_game.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -343,14 +327,6 @@
             }
         },
         {
-            "Key": "a9d5036d-68fd-4699-b5f8-9f7c4bd4ce1b",
-            "Value": {
-                "id": "54c7494b-f059-4046-9b71-7c58477b95da",
-                "resourcePath": "scripts\\NextRound\\NextRound.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "aba626b8-ef74-4371-b7b8-5ce3f04ea05c",
             "Value": {
                 "id": "22dc444f-85ee-4867-8b32-fd1312e31a61",
@@ -423,14 +399,6 @@
             }
         },
         {
-            "Key": "d5ecf18e-0353-4c45-a4ad-58c8d77c8f05",
-            "Value": {
-                "id": "1f74c8f5-3189-49d7-bd75-12666d3acdfa",
-                "resourcePath": "tilesets\/collision\/collision.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "d72e540a-414b-42d4-8171-40b16b248d1f",
             "Value": {
                 "id": "38da9d6e-3880-424e-b980-977f972ba650",
@@ -487,14 +455,6 @@
             }
         },
         {
-            "Key": "f0fece3f-bb76-4725-9f95-d94ec6922691",
-            "Value": {
-                "id": "717a407a-77bf-48b3-b1a2-800e8e16d867",
-                "resourcePath": "sprites\/spr_mask\/spr_mask.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f3a67031-cf81-45e7-88dd-ee430a3dd18b",
             "Value": {
                 "id": "bdbd88d5-a12f-4add-8cdf-f0bb39c6d833",
@@ -528,8 +488,7 @@
         }
     ],
     "script_order": [
-        "1f1ca95c-a72a-4868-a07e-61a02023f2de",
-        "a9d5036d-68fd-4699-b5f8-9f7c4bd4ce1b"
+        "1f1ca95c-a72a-4868-a07e-61a02023f2de"
     ],
     "tutorial": ""
 }
