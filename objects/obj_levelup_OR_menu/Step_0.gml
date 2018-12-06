@@ -63,7 +63,7 @@ else if (room == levelup)
 			}
 			case 2:
 			{
-				obj_player.moneyRegen += 5;
+				obj_player.movingAccuracy -= 2;
 				break;
 			}
 			case 3:

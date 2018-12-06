@@ -6,7 +6,7 @@ mpos_levelup_menu = 0;
 mpos_invest_menu = 0;
 abilities = ["Increase max Money", 
 			"Increase movement speed",
-			"Increase regeneration",
+			"Increase hip fire accuracy",
 			"Increase resistance", 
 			"Back to game"];
 			

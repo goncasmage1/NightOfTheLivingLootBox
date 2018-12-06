@@ -24,5 +24,6 @@ aimOffset = movingAccuracy;
 rounds = 1;
 collision_offset = 10;
 shake = 0;
+level = 1;
 levelsToUpgrade = 0;
 levellingUp = false;

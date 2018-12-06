@@ -104,7 +104,7 @@ if (room == level1) {
 		2+camera_get_view_x(view_camera[0])+190,
 		2+camera_get_view_y(view_camera[0])+80, "/");
 		
-	//MaxHP
+	//MaxXP
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
 	draw_set_font(fnt_smaller);

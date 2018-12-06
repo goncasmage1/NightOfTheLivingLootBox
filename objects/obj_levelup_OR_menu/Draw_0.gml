@@ -6,10 +6,24 @@ draw_set_color(c_black);
 draw_rectangle(0,0,room_width, room_height,0);
 
 draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
+draw_set_valign(fa_top);
 draw_set_font(fnt_score);
 draw_set_color(c_green);
 
+//Level
+draw_text(x + 200, y - 250, "Level: ");
+draw_text(x + 420, y - 250, obj_player.level);
+
+//XP
+draw_text(x + 700, y - 250, "XP: ");
+draw_text(x + 840, y - 250, obj_player.xp);
+draw_text(x + 1040, y - 250, "/");
+draw_text(x + 1090, y - 250, obj_player.max_xp);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
+draw_set_font(fnt_score);
+draw_set_color(c_green);
 //MaxMoney
 draw_text(x - 700, y + 100 + y_space * 0, "Max Money: ");
 draw_text(x - 250, y + 100 + y_space * 0, obj_player.maxMoney);
