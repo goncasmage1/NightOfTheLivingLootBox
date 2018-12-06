@@ -1,7 +1,7 @@
 obj_spawner.round_enemies -= 1;
 
 obj_player.xp += 10;
-if(obj_player.xp >= obj_player.max_xp)
+while(obj_player.xp >= obj_player.max_xp)
 {
 	obj_player.levelsToUpgrade += 1;
 	obj_player.max_xp = floor(obj_player.max_xp * obj_player.xp_increase);
@@ -14,12 +14,12 @@ if(obj_spawner.round_enemies == 0){
 	
 	//Add experience
 	with (obj_player) {
-		xp += betPile * bonus_xp;
+		xp += xp * (betPile * bonus_xp);
 	
 		betPile = 0;
 	}
 	
-	if(obj_player.xp >= obj_player.max_xp)
+	while(obj_player.xp >= obj_player.max_xp)
 	{
 		obj_player.levelsToUpgrade += 1;
 		obj_player.max_xp = floor(obj_player.max_xp * obj_player.xp_increase);

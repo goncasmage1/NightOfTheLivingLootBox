@@ -25,7 +25,6 @@ if (room == level1)
 			{
 				bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet);
 				newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
-				//bullet = instance_create_layer(x + lengthdir_x(57, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet);
 				bullet.direction = newDir;
 				bullet.image_angle = bullet.direction;
 			}
@@ -35,10 +34,8 @@ if (room == level1)
 				ammo--;
 				bullet = instance_create_layer(x,y,"lay_bullets",obj_bullet2);
 				newDir = point_direction(x,y,mouse_x,mouse_y) + random_range(-aimOffset, aimOffset);
-				//bullet = instance_create_layer(x + lengthdir_x(59, image_angle),y - lengthdir_x(15, image_angle),"lay_bullets",obj_bullet2);
 				bullet.direction = newDir;
 				bullet.image_angle = bullet.direction;
-			
 			}
 			//set cooldown to current weaponspeed
 			cooldown = firingInterval;
