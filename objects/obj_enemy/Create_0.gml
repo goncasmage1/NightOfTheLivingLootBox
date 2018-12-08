@@ -13,3 +13,4 @@ target = obj_player;
 x_flag = false;
 y_flag = false;
 x_lock = false;
+text_alpha = 0

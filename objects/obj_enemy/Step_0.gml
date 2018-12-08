@@ -13,6 +13,8 @@ else {
 	if (target == obj_distr) target = obj_player;
 }
 
+if(text_alpha > 0) text_alpha -= 0.01;
+
 //Move towards target
 if (target == obj_player) {
 	
@@ -25,6 +27,7 @@ if (target == obj_player) {
 				attackCounter = attackCounter - attackInterval;
 				obj_player.money = obj_player.money - obj_player.enemyDamage;
 				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
+				text_alpha = 1;
 				if (obj_player.money <= 0) {
 					game_restart();	
 				}
@@ -41,6 +44,7 @@ if (target == obj_player) {
 			if (attackCounter == 0.0) {
 				obj_player.money = obj_player.money - obj_player.enemyDamage;
 				audio_play_sound(Roblox_Death_Sound_Effect,0,0);
+				text_alpha = 1;
 				if (obj_player.money <= 0) {
 					game_restart();	
 				}
