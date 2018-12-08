@@ -119,7 +119,6 @@ else if (room == invest) {
 					if (obj_player.money + invest_increment < obj_player.maxMoney) {
 						obj_player.money += invest_increment;
 					}
-					else obj_player.money = obj_player.maxMoney;
 				}
 				break;
 			}
