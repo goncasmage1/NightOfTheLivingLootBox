@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "21abc89e-d6e1-4c5f-bab6-22a67fc53ca9",
-            "Value": {
-                "id": "98b0fec4-1839-485c-98ca-c701ee2a5711",
-                "resourcePath": "sprites\/spr_lootbox\/spr_lootbox.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "31046b4b-bdd0-4fdf-9df9-7cf2d7aae317",
             "Value": {
                 "id": "56a4621f-c3a1-4d88-9ac5-934961c93f30",
@@ -323,6 +315,14 @@
             "Value": {
                 "id": "22dc444f-85ee-4867-8b32-fd1312e31a61",
                 "resourcePath": "sprites\/spr_player\/spr_player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ad5ed633-ff77-4ea0-878c-0942267eca9d",
+            "Value": {
+                "id": "c83a3976-dde7-4a32-8f18-c85fc9fdae08",
+                "resourcePath": "sprites\\overwatch_lootbox\\overwatch_lootbox.yy",
                 "resourceType": "GMSprite"
             }
         },
