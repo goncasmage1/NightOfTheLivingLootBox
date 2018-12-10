@@ -5,6 +5,7 @@
     "name": "fnt_smaller",
     "AntiAlias": 1,
     "TTFName": "",
+    "ascenderOffset": 0,
     "bold": true,
     "charset": 0,
     "first": 0,
@@ -1449,7 +1450,7 @@
             "y": 127
         }
     ],
-    "sampleText": null,
+    "sampleText": "",
     "size": 24,
     "styleName": "Bold",
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f"

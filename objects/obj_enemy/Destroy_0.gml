@@ -30,7 +30,7 @@ if(obj_spawner.round_enemies == 0){
 	if (obj_player.levelsToUpgrade > 0)
 	{
 		//instance_deactivate_all(true);
-		room_goto(menu);
+		room_goto(levelup);
 	}
 }
 
