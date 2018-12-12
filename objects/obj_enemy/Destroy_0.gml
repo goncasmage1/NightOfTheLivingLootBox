@@ -37,7 +37,7 @@ if(obj_spawner.round_enemies == 0){
 //Create enemy splatter on death
 with (instance_create_layer(x,y,"lay_splatter",obj_splatter)) image_angle = other.direction;
 
-var moneyLuck = irandom_range(1,30);
+var moneyLuck = irandom_range(1,20);
 if(moneyLuck == 1) {
 	with (instance_create_layer(x,y,"lay_splatter",obj_cash)) image_angle = other.direction;
 }
