@@ -44,8 +44,8 @@ draw_set_color(c_white);
 draw_text(x + stats_x_offset + 0, y + stats_y_offset + 350 + y_space * 0, "Money: ");
 draw_set_color(c_lime);
 draw_text(x + stats_x_offset + 230, y + stats_y_offset + 350 + y_space * 0, obj_player.money);
-draw_text(x + stats_x_offset + 230 + (string_length(obj_player.money) * 35), y + stats_y_offset + 350 + y_space * 0, "/");
-draw_text(x + stats_x_offset + 270 + (string_length(obj_player.money) * 35), y + stats_y_offset + 350 + y_space * 0, obj_player.maxMoney);
+draw_text(x + stats_x_offset + 230 + (string_length(obj_player.money) * 38), y + stats_y_offset + 350 + y_space * 0, "/");
+draw_text(x + stats_x_offset + 270 + (string_length(obj_player.money) * 38), y + stats_y_offset + 350 + y_space * 0, obj_player.maxMoney);
 
 //Movement Speed
 draw_set_color(c_white);

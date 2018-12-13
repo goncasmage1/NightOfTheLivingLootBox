@@ -1,45 +1,29 @@
 if (room == level1) {
 	draw_set_halign(fa_center);
-
-	//SHADOW TEXT
-	draw_set_alpha(0.5);
-	draw_set_colour(c_black);
-	draw_set_font(fnt_smaller);
-	draw_text(
-		2+camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0])+32,"Round");
 	
-
-	draw_set_font(fnt_score);
-	draw_text(
-		2+camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0])+80,rounds);
-
-
+	draw_set_font(fnt_UI);
 	//REGULAR TEXT
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+33,"Round");
+		camera_get_view_y(view_camera[0])+35,"Round");
 	
 
-	draw_set_font(fnt_score);
+	
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0])+81,rounds);
+		camera_get_view_y(view_camera[0])+90,rounds);
 	
+	draw_set_font(fnt_UI_small);
 	//ENEMY COUNTER
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
 		camera_get_view_y(view_camera[0])+32,"Enemies Left");
 	
 
-	draw_set_font(fnt_smaller);
 	draw_text(
 		camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/1.1,
 		camera_get_view_y(view_camera[0])+75,obj_spawner.round_enemies);
@@ -50,7 +34,6 @@ if (room == level1) {
 	//Text
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+32,
 		2+camera_get_view_y(view_camera[0])+32, "Money: ");
@@ -58,32 +41,28 @@ if (room == level1) {
 	//Amount
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+180,
+		2+camera_get_view_x(view_camera[0])+170,
 		2+camera_get_view_y(view_camera[0])+32, money);
 		
 	// /
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+250,
+		2+camera_get_view_x(view_camera[0])+180+(string_length(money) * 18),
 		2+camera_get_view_y(view_camera[0])+32, "/");
 		
 	//MaxAmount
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+270,
+		2+camera_get_view_x(view_camera[0])+180+(string_length(money) * 18)+20,
 		2+camera_get_view_y(view_camera[0])+32, maxMoney);
 	
 	//XP
 	//Text
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+32,
 		2+camera_get_view_y(view_camera[0])+80, "XP: ");
@@ -91,7 +70,6 @@ if (room == level1) {
 	//XP
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+100,
 		2+camera_get_view_y(view_camera[0])+80, xp);
@@ -99,24 +77,21 @@ if (room == level1) {
 	// /
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+190,
+		2+camera_get_view_x(view_camera[0]) + 100 + (string_length(xp) * 21),
 		2+camera_get_view_y(view_camera[0])+80, "/");
 		
 	//MaxXP
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
-		2+camera_get_view_x(view_camera[0])+210,
+		2+camera_get_view_x(view_camera[0]) + 100 + (string_length(xp) * 21) + 20,
 		2+camera_get_view_y(view_camera[0])+80, max_xp);
 		
 	//AMMO
 	//Text
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+32,
 		2+camera_get_view_y(view_camera[0])+128, "Ammo: ");
@@ -124,7 +99,6 @@ if (room == level1) {
 	//Amount
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
 	draw_text(
 		2+camera_get_view_x(view_camera[0])+180,
 		2+camera_get_view_y(view_camera[0])+128, weapon ? ammo : "9999");

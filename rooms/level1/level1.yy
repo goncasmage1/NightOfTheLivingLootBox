@@ -272,8 +272,8 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "lay_splatter",
-            "id": "1e509657-9bb8-4687-b24e-228c73c31d61",
+            "name": "lay_player",
+            "id": "aa366c79-1a01-492b-b8fc-35c432b113bf",
             "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
@@ -298,8 +298,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "lay_player",
-            "id": "aa366c79-1a01-492b-b8fc-35c432b113bf",
+            "name": "lay_splatter",
+            "id": "1e509657-9bb8-4687-b24e-228c73c31d61",
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
