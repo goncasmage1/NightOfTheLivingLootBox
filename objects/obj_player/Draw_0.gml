@@ -112,7 +112,7 @@ else if (room == intro) {
 	
 	draw_set_alpha(1);
 	draw_set_colour(c_white);
-	draw_set_font(fnt_smaller);
+	draw_set_font(fnt_UI_small);
 	
 	var text1 = "After an in-depth financial analysis, executives at UbiArts have concluded that ";
 	var text2 = "aggressive lootboxes are much more profitable than regular lootboxes. In order to ";
@@ -121,11 +121,31 @@ else if (room == intro) {
 	
 	draw_text_ext_transformed(
 		2+camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2,
+		2+camera_get_view_y(view_camera[0]) + 300,
 		text1 + text2 + text3 + text4,
 		40,
 		1000,
 		1,
 		1,
 		0);
+		
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+400,
+		2+camera_get_view_y(view_camera[0])+600,
+		"W, A, S, D to walk");
+		
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+800,
+		2+camera_get_view_y(view_camera[0])+600,
+		"LMB to shoot");
+
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+800,
+		2+camera_get_view_y(view_camera[0])+650,
+		"RMB to switch weapon");
+		
+	draw_text(
+		2+camera_get_view_x(view_camera[0])+1250,
+		2+camera_get_view_y(view_camera[0])+600,
+		"Shift to throw money");
 }

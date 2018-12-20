@@ -493,14 +493,6 @@
                 "resourcePath": "objects\/obj_cash\/obj_cash.yy",
                 "resourceType": "GMObject"
             }
-        },
-        {
-            "Key": "fd3bbf6e-878c-416b-9f13-90ef57aba2d1",
-            "Value": {
-                "id": "cfc85f39-3945-4321-8bf4-84ff93d7c693",
-                "resourcePath": "scripts\\scr_menu\\scr_menu.yy",
-                "resourceType": "GMScript"
-            }
         }
     ],
     "script_order": [
