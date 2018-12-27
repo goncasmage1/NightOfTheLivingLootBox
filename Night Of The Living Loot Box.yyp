@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0a631eca-80bb-4a45-b5ce-485bebfc3ad6",
+            "Value": {
+                "id": "4d7d8c47-7381-438c-83d9-1135b702d7ec",
+                "resourcePath": "rooms\\keys\\keys.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "12a032bd-57a2-4563-a584-e792a165211b",
             "Value": {
                 "id": "37e0f03c-0090-4d6f-ac26-294425bfb8e0",

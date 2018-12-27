@@ -1,5 +1,5 @@
 /// @description Throw money
-if (money > moneyThrowAmount)
+if (room == level1 and money > moneyThrowAmount)
 {
 	distraction = instance_create_layer(x,y,"lay_bullets",obj_distr);
 	newDir = point_direction(x,y,mouse_x,mouse_y);
