@@ -22,7 +22,7 @@ if (room == levelup)
 		{
 			case 0:
 			{
-				obj_player.maxMoney += 10;
+				obj_player.maxMoney += 20;
 				break;
 			}
 			case 1:
