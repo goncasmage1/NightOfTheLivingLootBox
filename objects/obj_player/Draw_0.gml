@@ -116,14 +116,16 @@ else if (room == intro) {
 	
 	var text1 = "After an in-depth financial analysis, executives at UbiArts have concluded that ";
 	var text2 = "aggressive lootboxes are much more profitable than regular lootboxes. In order to ";
-	var text3 = "test this new business model, the company has developed a new game...\n\n";
-	var text4 = "Are you ready to face... the UnLooted?\n\n\n\n\n";
-	var text5 = "Press Enter to continue";
+	var text3 = "test this new business model, the company has developed a new videogame. ";
+	var text4 = "As a lowly QA tester, you must test the viability of this new business practice.\n";
+	var text5 = "Defend yourself from the loot boxes attacking you in your own home...\n\n";
+	var text6 = "Are you ready to face... the UnLooted?\n\n\n\n\n";
+	var text7 = "Press Enter to continue";
 	
 	draw_text_ext_transformed(
 		2+camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2,
-		2+camera_get_view_y(view_camera[0]) + 400,
-		text1 + text2 + text3 + text4 + text5,
+		2+camera_get_view_y(view_camera[0]) + 500,
+		text1 + text2 + text3 + text4 + text5 + text6 + text7,
 		40,
 		1000,
 		1,

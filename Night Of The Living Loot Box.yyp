@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1c8d502f-bf9a-4c29-af4f-bd032e6d0fba",
+            "Value": {
+                "id": "b12d364b-65aa-4afd-868a-f5c0853ed0c8",
+                "resourcePath": "sprites\\cash_sprite2\\cash_sprite2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f1ca95c-a72a-4868-a07e-61a02023f2de",
             "Value": {
                 "id": "17b2f394-035b-4b63-834e-bd31f7a9e3ed",
